@@ -1,3 +1,9 @@
 mat-grid-tile {
   background: lightblue;
 }
+.mat-icon.favorite {
+  color: white !important;
+}
+.favorite.checked{
+  color: yellow !important;
+}

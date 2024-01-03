@@ -1,4 +1,8 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile *ngFor="let item of products">{{item.brand}}</mat-grid-tile>
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile  *ngFor="let item of products">
+    <mat-icon class="favorite" (click)="toggleFavorite(item.id)"
+              [class.checked]="isFavorite(item.id)" >star</mat-icon>
+    {{item.id}} {{item.title}}
+  </mat-grid-tile>
 
 </mat-grid-list>
