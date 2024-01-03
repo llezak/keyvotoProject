@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class FavoriteService {
     private favorites: Set<number> = new Set<number>();
-
     constructor() {
     }
 
@@ -15,7 +15,6 @@ export class FavoriteService {
         } else {
             this.favorites.add(itemId);
         }
-
     }
 
     isFavorite(itemId: number): boolean {
@@ -30,4 +29,7 @@ export class FavoriteService {
     resetFavorites() {
         this.favorites = new Set<number>();
     }
+
+
 }
+

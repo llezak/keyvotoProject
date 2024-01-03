@@ -7,3 +7,12 @@ mat-grid-tile {
 .favorite.checked{
   color: yellow !important;
 }
+.my-card {
+  max-width: 400px;
+}
+img{
+  width:  100px;
+  height: 100px;
+}
+
+

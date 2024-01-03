@@ -12,6 +12,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientModule} from "@angular/common/http";
 import {MatGridListModule} from "@angular/material/grid-list";
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -23,18 +24,19 @@ import {MatGridListModule} from "@angular/material/grid-list";
     ProductListComponent,
 
   ],
-  imports: [
-    CommonModule,
-    AppRoutingModule,
-    BrowserModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatGridListModule
+    imports: [
+        CommonModule,
+        AppRoutingModule,
+        BrowserModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatGridListModule,
+        MatCardModule
 
-  ],
+    ],
   bootstrap:[AppComponent]
 })
 export class AppModule { }
