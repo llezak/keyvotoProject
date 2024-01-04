@@ -1,16 +1,22 @@
-<mat-grid-list cols="3" rowHeight="2:1" gutterSize="50">
+<mat-grid-list cols="3" gutterSize="50" >
 
-    <mat-grid-tile   *ngFor="let item of products">
-        <mat-card >
+    <mat-grid-tile *ngFor="let item of products">
+        <mat-card>
             <mat-card-header>
                 <mat-card-title>{{item.title}}</mat-card-title>
             </mat-card-header>
-            <img  style="width: 300px; height: 200px; overflow: hidden;" mat-card-image alt="thumbnail" [src]="item.thumbnail ">
-            <mat-card-content  style="display: flex; justify-content: space-between;" >
-                <mat-card-title>{{item.price}}</mat-card-title>
-                <mat-icon class="favorite" (click)="toggleFavorite(item.id)"
-                          [class.checked]="isFavorite(item.id)">star
-                </mat-icon>
+
+            <mat-card-content>
+                <div class="image-container">
+                    <img  mat-card-image [src]="item.thumbnail" alt="thumbnail" >
+                </div>
+                <div class="price-and-mat-icon-container">
+                    <div class="price-container" >{{item.price}}$</div>
+                    <mat-icon (click)="toggleFavorite(item.id)" [class.checked]="isFavorite(item.id)"
+                              class="favorite">star
+                    </mat-icon>
+                </div>
+
             </mat-card-content>
 
         </mat-card>
