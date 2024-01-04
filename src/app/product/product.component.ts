@@ -12,6 +12,7 @@ import {Product} from "../_models/product";
 export class ProductComponent implements OnInit {
 
   product!: Product  ;
+  selectedIndex : number = 0 ;
 
   constructor(private productService: ProductService,
               private activatedRoute: ActivatedRoute) {
@@ -33,7 +34,11 @@ export class ProductComponent implements OnInit {
 
   }
 
+  updateIndex(imageIndex:number){
 
+    this.selectedIndex = imageIndex ;
+
+  }
 
 
 

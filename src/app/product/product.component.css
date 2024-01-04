@@ -1,0 +1,42 @@
+.product-container{
+display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    width: 45%;
+}
+.big-image img {
+    width: 30vi;
+    height: 30vi;
+    object-fit: cover;
+    border: 3px solid #539bee;
+
+}
+.small-images img {
+
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 2px solid #9a9999;
+}
+.product-details{
+    width: 55%;
+
+}
+.property {
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+.property label {
+    margin-right: 10px;
+}
+
+
+

@@ -1,1 +1,78 @@
-<p>product works!</p>
+<div class="product-container">
+    <div class="left-side">
+
+        <div class="big-image" *ngIf="product?.images && product.images.length > 0">
+            <img [src]="product.images[selectedIndex]" alt="product image ">
+
+        </div>
+        <div class="small-images"  *ngIf="product?.images && product.images.length > 1">
+
+            <img  (click)="updateIndex(imageIndex)"
+                  *ngFor="let item of product.images; let imageIndex = index"
+                  [src]="item" alt="images ">
+        </div>
+
+
+    </div>
+
+    <div class="product-details">
+        <div class="property">
+            <label>
+                Title:
+            </label>
+            <span *ngIf="product?.title">
+                {{product.title}}
+            </span>
+
+        </div>
+        <div class="property">
+            <label>
+                Description:
+            </label>
+            <span>
+               {{product.description}}
+            </span>
+
+        </div>
+        <div class="property">
+            <label>
+
+            </label>
+            <span>
+
+            </span>
+
+        </div>
+        <div class="property">
+            <label>
+
+            </label>
+            <span>
+
+            </span>
+
+        </div>
+        <div class="property">
+            <label>
+
+            </label>
+            <span>
+
+            </span>
+
+        </div>
+        <div class="property">
+            <label>
+
+            </label>
+            <span>
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</div>
