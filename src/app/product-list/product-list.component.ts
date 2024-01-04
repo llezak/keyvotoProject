@@ -47,9 +47,6 @@ export class ProductListComponent implements OnInit {
 
         if (this.showFavorites) {
             this.products = this.products.filter((item: Product) => this.favoriteService.isFavorite(item.id))
-        } else {
-            this.products =this.products;
-
         }
 
     }
