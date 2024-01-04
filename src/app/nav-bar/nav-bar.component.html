@@ -1,7 +1,8 @@
 <mat-toolbar>
   <span class="spacer"></span>
 
-  <button mat-button routerLinkActive ="underline"  routerLink="products" class="button-font" >
+  <button mat-button routerLinkActive ="underline"  routerLink="products"
+          [routerLinkActiveOptions]="{exact:true}"  class="button-font" >
  Products
   </button>
 
