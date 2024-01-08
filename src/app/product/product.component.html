@@ -5,11 +5,11 @@
             <img [src]="product.images[selectedIndex]" alt="product image ">
 
         </div>
-        <div class="small-images"  *ngIf="product?.images && product.images.length > 1">
+        <div class="small-images" *ngIf="product?.images && product.images.length > 1">
 
-            <img  (click)="updateIndex(imageIndex)"
-                  *ngFor="let item of product.images; let imageIndex = index"
-                  [src]="item" alt="images ">
+            <img (click)="updateIndex(imageIndex)"
+                 *ngFor="let item of product.images; let imageIndex = index"
+                 [src]="item" alt="images ">
         </div>
 
 

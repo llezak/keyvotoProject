@@ -1,60 +1,80 @@
 mat-grid-tile {
-  background: white;
+    background: white;
 }
 
-.favorite.checked {
-  color: yellow !important;
+/*.favorite.checked {*/
+/*  color: yellow !important;*/
+/*}*/
+
+/*.mat-icon {*/
+/*  cursor: pointer;*/
+/*  color: grey;*/
+/*  padding-top:10px ;*/
+/*  padding-right:10px ;*/
+/*  font-size: 28px;*/
+/*}*/
+
+
+.checked {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: yellow;
+    padding-right: 16px;
+    font-size: 24px;
 }
 
-.mat-icon {
-  cursor: pointer;
-  color: grey;
-  padding-top:10px ;
-  padding-right:10px ;
-  font-size: 28px;
+.unchecked {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    padding-right: 16px;
+    font-size: 24px;
 }
 
 mat-card {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  border: 2px solid #ccc;
-  border-radius: 15px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 2px solid #ccc;
+    border-radius: 15px;
 }
 
 .mat-card-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .image-container {
-  aspect-ratio: 1.3;
+    aspect-ratio: 1.3;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-}
-.price-and-mat-icon-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
+    width: 100%;
+    height: 100%;
 }
 
-mat-card-title{
-  cursor: pointer;
-  padding-bottom: 10px;
-  padding-left: 4px ;
-  font-weight: bold;
+.price-and-mat-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
 }
+
+mat-card-title {
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    font-weight: bold;
+}
+
 .mat-mdc-card-content {
-  padding-left: 0px !important;
-  padding-right:0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
+
 .price-container {
- padding-top: 10px;
-  padding-left: 30px;
-  font-weight: bold;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-weight: bold;
 
 }
