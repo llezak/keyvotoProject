@@ -19,7 +19,8 @@ mat-grid-tile {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: yellow;
-    padding-right: 16px;
+    padding-top: 10px;
+    padding-right: 20px;
     font-size: 24px;
 }
 
@@ -27,7 +28,8 @@ mat-grid-tile {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: white;
-    padding-right: 16px;
+    padding-top: 10px;
+    padding-right: 20px;
     font-size: 24px;
 }
 
