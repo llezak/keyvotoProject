@@ -5,6 +5,7 @@ import {Injectable} from '@angular/core';
 })
 export class FavoriteService {
     private favorites: Set<number> = new Set<number>();
+
     constructor() {
     }
 
@@ -19,14 +20,6 @@ export class FavoriteService {
     isFavorite(itemId: number): boolean {
 
         return this.favorites.has(itemId);
-    }
-
-    getFavorites(): any {
-        return this.favorites;
-    }
-
-    resetFavorites() {
-        this.favorites = new Set<number>();
     }
 
 

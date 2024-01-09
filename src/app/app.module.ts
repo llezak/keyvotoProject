@@ -22,7 +22,6 @@ import {MatCardModule} from "@angular/material/card";
     NavBarComponent ,
     ProductComponent ,
     ProductListComponent,
-
   ],
     imports: [
         CommonModule,
@@ -35,7 +34,6 @@ import {MatCardModule} from "@angular/material/card";
         HttpClientModule,
         MatGridListModule,
         MatCardModule
-
     ],
   bootstrap:[AppComponent]
 })

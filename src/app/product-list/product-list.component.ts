@@ -10,9 +10,9 @@ import {ActivatedRoute} from "@angular/router";
     styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
+
     products: Product[] = [];
     showFavorites: boolean = false;
-
 
     constructor(private productService: ProductService,
                 private favoriteService: FavoriteService,
@@ -21,7 +21,6 @@ export class ProductListComponent implements OnInit {
 
     ngOnInit() {
         this.showFavorites = (this.activatedRoute.snapshot.routeConfig as { path: string }).path === 'favorites';
-
         this.productService.getProducts().subscribe(
             resp => {
                 console.log(resp);
@@ -29,7 +28,6 @@ export class ProductListComponent implements OnInit {
                     this.products = resp.products.filter((item: Product) => this.favoriteService.isFavorite(item.id))
                 } else {
                     this.products = resp.products;
-
                 }
             },
             error => {
@@ -37,23 +35,17 @@ export class ProductListComponent implements OnInit {
                 console.log(error);
             }
         );
-
-
     }
 
     toggleFavorite(itemId: number) {
         this.favoriteService.toggleFavorite(itemId);
-
         if (this.showFavorites) {
             this.products = this.products.filter((item: Product) => this.favoriteService.isFavorite(item.id))
         }
-
     }
 
     isFavorite(itemId: number) {
         return this.favoriteService.isFavorite(itemId);
-
     }
-
 
 }

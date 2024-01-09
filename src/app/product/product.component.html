@@ -1,9 +1,7 @@
 <div class="product-container">
     <div class="left-side">
-
         <div class="big-image" *ngIf="product?.images && product.images.length > 0">
             <img [src]="product.images[selectedIndex]" alt="product image ">
-
         </div>
         <div class="small-images" *ngIf="product?.images && product.images.length > 1">
 
@@ -11,68 +9,55 @@
                  *ngFor="let item of product.images; let imageIndex = index"
                  [src]="item" alt="images ">
         </div>
-
-
     </div>
-
     <div class="product-details">
         <div class="property">
-            <label >
+            <label>
                 Title:
-            </label >
-            <span      *ngIf="product?.title">
+            </label>
+            <span *ngIf="product?.title">
                 {{product.title}}
             </span>
-
         </div>
         <div class="property">
-            <label >
+            <label>
                 Description:
             </label>
             <span>
                {{product.description}}
             </span>
-
         </div>
         <div class="property">
-            <label >
+            <label>
                 Price:
             </label>
             <span>
                {{product.price}}$
             </span>
-
         </div>
         <div class="property">
-            <label >
+            <label>
                 Brand:
             </label>
             <span>
                {{product.brand}}
             </span>
-
         </div>
         <div class="property">
-            <label >
+            <label>
                 Category:
             </label>
             <span>
                {{product.category}}
             </span>
-
         </div>
         <div class="property">
-            <label >
+            <label>
                 Stock:
             </label>
             <span>
                {{product.stock}}
             </span>
-
         </div>
-
-
     </div>
-
-
 </div>

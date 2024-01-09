@@ -15,7 +15,6 @@ export class ProductComponent implements OnInit {
 
     constructor(private productService: ProductService,
                 private activatedRoute: ActivatedRoute) {
-
     }
 
     ngOnInit() {
@@ -23,21 +22,14 @@ export class ProductComponent implements OnInit {
         this.productService.getProduct(produvtId).subscribe(
             resp => {
                 this.product = resp;
-
             },
             error => {
                 console.log(error)
             }
         );
-
-
     }
 
     updateIndex(imageIndex: number) {
-
         this.selectedIndex = imageIndex;
-
     }
-
-
 }

@@ -2,19 +2,6 @@ mat-grid-tile {
     background: white;
 }
 
-/*.favorite.checked {*/
-/*  color: yellow !important;*/
-/*}*/
-
-/*.mat-icon {*/
-/*  cursor: pointer;*/
-/*  color: grey;*/
-/*  padding-top:10px ;*/
-/*  padding-right:10px ;*/
-/*  font-size: 28px;*/
-/*}*/
-
-
 .checked {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -78,5 +65,4 @@ mat-card-title {
     padding-top: 10px;
     padding-left: 30px;
     font-weight: bold;
-
 }
